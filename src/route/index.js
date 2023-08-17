@@ -13,12 +13,17 @@ class User {
     this.password = password
     this.id = new Date().getTime()
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
   verifyPassword = (password) => this.password === password
 
   static add = (user) => {
     this.#list.push(user)
   }
 
+<<<<<<< HEAD
   static getList = () => {
     return this.#list
   }
@@ -44,19 +49,51 @@ class User {
 
     if (user) {
       User.update(user, data)
+=======
+  static getList = () =>  this.#list
+ 
+  static getById = (id) => 
+    this.#list.find((user) => user.id === id)
+
+    static deleteById = (id) => {
+      const index = this.#list.findIndex(
+        (user) => user.id === id,
+        )
+
+        if(index !== -1) {
+          this.#list.splice(index, 1)
+          return true
+        } else {
+          return false
+        }
+    }
+
+  static updateById = (id, data) => {
+    const user = this.getById(id)
+
+    if(user) {
+      this.update(user, data)
+
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
       return true
     } else {
       return false
     }
   }
 
+<<<<<<< HEAD
   static update = (user, { email }) => {
     if (email) {
+=======
+  static update = (user, { email}) => {
+    if(email) {
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
       user.email = email
     }
   }
 }
 
+<<<<<<< HEAD
 class Product {
   static #list = [
     {
@@ -150,6 +187,8 @@ class Product {
 }
 
 
+=======
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 // ================================================================
 
 // router.get Створює нам один ентпоїнт
@@ -159,10 +198,16 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
   const list = User.getList()
 
+  const list = User.getList()
+
   // ↙️ cюди вводимо назву файлу з сontainer
   res.render('index', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'index',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
     data: {
       users: {
         list,
@@ -175,11 +220,18 @@ router.get('/', function (req, res) {
 
 // ================================================================
 
+<<<<<<< HEAD
 
 router.post('/user-create', function (req, res) {
   // console.log(req.body)
   const { email, login, password } = req.body
   const user = new User(email, login, password)
+=======
+router.post('/user-create', function (req, res) {
+  const {email, login, password} = req.body;
+
+  const user = new User(email, login, password);
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 
   User.add(user)
 
@@ -187,11 +239,16 @@ router.post('/user-create', function (req, res) {
 
   res.render('success-info', {
     style: 'success-info',
+<<<<<<< HEAD
     info: `Користувач створений`,
+=======
+    info: 'Користувач створений'
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
   })
 })
 
 // ================================================================
+<<<<<<< HEAD
 router.get('/user-delete', function (req, res) {
   // console.log(req.body)
   const { id } = req.query
@@ -201,10 +258,22 @@ router.get('/user-delete', function (req, res) {
   res.render('success-info', {
     style: 'success-info',
     info: `Користувач видалений`,
+=======
+
+router.get('/user-delete', function (req, res) {
+  const {id} = req.query;
+
+   User.deleteById(Number(id))
+
+  res.render('success-info', {
+    style: 'success-info',
+    info: 'Користувач видалений',
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
   })
 })
 
 // ================================================================
+<<<<<<< HEAD
 router.post('/user-update', function (req, res) {
   const { email, password, id } = req.body
   let result = false
@@ -212,11 +281,23 @@ router.post('/user-update', function (req, res) {
 
   if (user.verifyPassword(password)) {
     User.update(user, { email })
+=======
+
+router.post('/user-update', function (req, res) {
+  const { email, password, id} = req.body
+  let result = false
+
+  const user = User.getById(Number(id))
+
+  if(user.verifyPassword(password)) {
+    User.update(user, {email})
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
     result = true
   }
 
   res.render('success-info', {
     style: 'success-info',
+<<<<<<< HEAD
     info: result
       ? `Дані користувача змінено`
       : `Сталася помилка`,
@@ -367,6 +448,13 @@ router.get('/product-delete', function (req, res) {
 
 
 // ================================================================
+=======
+    info: result 
+    ? 'Email пошта оновлена' 
+    : 'Сталася помилка',
+  })
+})
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 
 
 // Підключаємо роутер до бек-енду

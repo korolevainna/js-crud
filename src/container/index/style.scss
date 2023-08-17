@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @use '../../lib/service.scss' as s; 
+=======
+@use '../../lib/service.scss' as s;
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 
 .form {
     display: flex;
@@ -7,7 +11,11 @@
     gap: s.space(8);
 
     &__title {
+<<<<<<< HEAD
         font-size: 20px;
+=======
+        font-size:  20px;
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
         font-weight: bold;
         padding-bottom: s.space(1);
         border-bottom: 1px solid s.color('light');
@@ -22,15 +30,24 @@
         display: flex;
         flex-direction: column;
         gap: s.space(2);
+<<<<<<< HEAD
 
     }
+=======
+    }
+
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
     &__label {
         font-size: 14px;
     }
 
     &__input {
         border: 1px solid s.color('light');
+<<<<<<< HEAD
         padding: s.space(2)
+=======
+        padding: s.space(2);
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
     }
 
     &__button {
@@ -40,11 +57,18 @@
     }
 }
 
+<<<<<<< HEAD
 .main {
     background-color: rgb(243, 243, 226);
     display: flex;
     flex-direction: column;
     gap: s.space(10)
+=======
+main {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(10);
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 }
 
 .user-list {

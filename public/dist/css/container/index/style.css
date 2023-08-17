@@ -1,29 +1,47 @@
 .form {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   padding: 16px;
   gap: 32px;
+=======
+  padding: 16;
+  gap: 32;
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 }
 .form__title {
   font-size: 20px;
   font-weight: bold;
+<<<<<<< HEAD
   padding-bottom: 4px;
+=======
+  padding-bottom: 4;
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
   border-bottom: 1px solid #ddd;
 }
 .form__content {
   display: grid;
+<<<<<<< HEAD
   gap: 24px;
+=======
+  gap: 24;
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 }
 .form__field {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   gap: 8px;
+=======
+  gap: 8;
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 }
 .form__label {
   font-size: 14px;
 }
 .form__input {
   border: 1px solid #ddd;
+<<<<<<< HEAD
   padding: 8px;
 }
 .form__button {
@@ -37,6 +55,20 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+=======
+  padding: 8;
+}
+.form__button {
+  border: 1px solid #ddd;
+  padding: 8;
+  border-radius: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40;
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 }
 
 .user-list li {

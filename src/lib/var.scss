@@ -1,5 +1,6 @@
 $colorMap: (
     light: #ddd,
+<<<<<<< HEAD
     primary:rgb(62, 62, 253),
     dark-primary:rgb(5, 5, 105),
     lighter: white,
@@ -8,4 +9,10 @@ $colorMap: (
 
 @function color($key) {
     @return map-get($colorMap, $key)
+=======
+);
+
+@function color ($key) {
+    @return map-get($colorMap, $key);
+>>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 }
