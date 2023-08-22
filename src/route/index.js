@@ -13,6 +13,7 @@ class User {
     this.password = password
     this.id = new Date().getTime()
   }
+}
 <<<<<<< HEAD
 =======
 
@@ -49,6 +50,8 @@ class User {
 
     if (user) {
       User.update(user, data)
+    }
+  }
 =======
   static getList = () =>  this.#list
  
@@ -86,9 +89,10 @@ class User {
     if (email) {
 =======
   static update = (user, { email}) => {
-    if(email) {
->>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
-      user.email = email
+      if(email) {
+  >>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
+        user.email = email
+      }
     }
   }
 }
