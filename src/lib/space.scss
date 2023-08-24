@@ -2,7 +2,12 @@
 @function space ($num){
     @return $num * 4px;
 =======
+<<<<<<< HEAD
+@function space ($num){
+    @return $num * 4px;
+=======
 @function space ($num) {
     @return $num * 4;
 >>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
+>>>>>>> a062e27898b342020978238fff5b47050d7eadef
 }

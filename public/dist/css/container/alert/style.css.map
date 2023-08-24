@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"style.css"}
+=======
 {"version":3,"sourceRoot":"","sources":["../../../../../src/container/alert/style.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGA;EACI;EACA;EACA;EACA;;AAIJ;EACI;EACA;EACA;EACA;EACA","file":"style.css"}
+>>>>>>> a062e27898b342020978238fff5b47050d7eadef

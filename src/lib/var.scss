@@ -1,14 +1,25 @@
 $colorMap: (
     light: #ddd,
 <<<<<<< HEAD
+    border: #808080,
+    dark: #121212,
+    gray: #bdbdbd,
+    main: blue
+=======
+<<<<<<< HEAD
     primary:rgb(62, 62, 253),
     dark-primary:rgb(5, 5, 105),
     lighter: white,
+>>>>>>> a062e27898b342020978238fff5b47050d7eadef
 );
 
 
 @function color($key) {
     @return map-get($colorMap, $key)
+<<<<<<< HEAD
+};
+
+=======
 =======
 );
 
@@ -16,3 +27,4 @@ $colorMap: (
     @return map-get($colorMap, $key);
 >>>>>>> 76485054a94ff4936df900df5cad8c48934002f9
 }
+>>>>>>> a062e27898b342020978238fff5b47050d7eadef
