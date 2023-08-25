@@ -1,0 +1,45 @@
+@use "../../lib/service.scss" as s;
+
+.nav {
+    display: flex;
+    width: 700px;
+    padding: s.space(4);
+    flex-direction: column;
+    gap: s.space(8);
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: 1px solid s.color("light");
+        padding: s.space(2);
+    }
+
+    &__list {
+        font-size: 20px;
+        font-weight: bold;
+        border-bottom: 1px solid s.color("light");
+        padding-bottom: s.space(1);
+        cursor: pointer;
+    }
+
+    &__list:hover {
+        // opacity: 0.7;
+        color: s.color('dark-primary');
+        font-style: italic;
+
+    }
+
+    &__link {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: s.color("primary")
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(10);
+    align-items: center;
+}
